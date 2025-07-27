@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps> = ({ currentLang, changeLanguage }) => {
               <select 
                 value={currentLang} 
                 onChange={(e) => changeLanguage(e.target.value)}
-                className="appearance-none bg-white/80 backdrop-blur-md border border-pink-200 rounded-xl px-4 py-2 pr-8 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent transition-all duration-300 hover:bg-white/90"
+                className="appearance-none text-black bg-white/80 backdrop-blur-md border border-pink-200 rounded-xl px-4 py-2 pr-8 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent transition-all duration-300 hover:bg-white/90"
               >
                 <option value="en">🇺🇸 EN</option>
                 <option value="ar">🇸🇦 AR</option>
