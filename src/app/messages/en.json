@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "ourStory": "Our Story",
+    "contact": "Contact"
+  },
+  "home": {
+    "mainTitle": "Swispy -- Mini Sweets for Every Occasion",
+    "tagline": "Mini sweets for your special moments. Elegant boxes, innovative flavors, coming soon to your hands!",
+    "introText": "We believe the little details make the biggest difference. That's why we launched Swispy - mini sweets with creative flavors and beautiful packaging, perfect for gifting or indulging. Coming soon - order directly from our website or via WhatsApp. Stay tuned!",
+    "orderWhatsapp": "Order via WhatsApp",
+    "comingSoon": "Coming Soon",
+    "revolution": "Mini Sweets Revolution",
+    "learnMore": "Learn More",
+    "uniqueBoxes": "Unique Boxes",
+    "sweetMoments": "Sweet Moments",
+    "madeWithLove": "Made with Love",
+    "miniDessertsDesc": "Elegant mini desserts crafted for your special moments",
+    "UniqueBoxes": "Unique Collections",
+    "SweetMoments": "SweetMoments",
+    "withlove": "Made with love",
+    "description": "Elegant mini sweets, carefully crafted for your special moments"
+  },
+  "products": {
+    "title": "Products",
+    "collection": "Our Sweet Collection",
+    "collectionDesc": "Three carefully crafted collections designed to make every moment sweeter. Each box tells its own story.",
+    "beFirst": "Be the First to Experience Swispy",
+    "waitlistDesc": "Join our exclusive waitlist and get notified when our sweet creations are ready to order. Early subscribers get special launch discounts!",
+    "preOrder": "Pre-Order via WhatsApp",
+    "followInstagram": "Follow on Instagram",
+    "flirtBox": {
+      "title": "Flirt Box",
+      "description": "4 mini cheesetarts in soft flavors - romantic & sweet packaging."
+    },
+    "secretBox": {
+      "title": "Secret Box", 
+      "description": "6 rich mini brownies - for self-love or sharing a secret."
+    },
+    "signatureBox": {
+      "title": "Signature Box",
+      "description": "Mixed mini treats - a luxurious box for your finest moments."
+    }
+  },
+  "story": {
+    "title": "Our Story",
+    "text": "Swispy started when we saw a gap in the market for elegant, mini-sized desserts. We wanted to create something unique, suitable for all occasions - a gift, a gathering, or a moment of joy. We're currently testing and perfecting every detail, because every moment - and every sweet - matters to us.",
+    "sweetJourney": "Our Sweet Journey",
+    "journeySteps": "Our Journey in 4 Steps",
+    "theIdea": "The Idea",
+    "theVision": "The Vision",
+    "theProcess": "The Process",
+    "thePromise": "The Promise",
+    "ideaDesc": "We noticed a gap in the market for elegant, mini-sized desserts",
+    "visionDesc": "Create something unique for all occasions - gifts, gatherings, joy",
+    "processDesc": "Currently testing and perfecting every detail with care",
+    "promiseDesc": "Every moment and every sweet matters to us",
+    "qualityFirst": "#QualityFirst",
+    "madeWithLove": "#MadeWithLove",
+    "everyDetail": "#EveryDetailMatters",
+    "joinStory": "Join Our Sweet Story",
+    "journeyDesc": "Every customer becomes part of our journey. Follow us to see behind-the-scenes content, recipe development, and be the first to try our creations.",
+    "followJourney": "Follow Our Journey"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "website": "Official Website",
+    "orderDirect": "Direct order link",
+    "thankYou": "Thank you for choosing Swispy - where sweetness fits every occasion 💕",
+    "letsConnect": "Let's Connect",
+    "connectDesc": "Ready to experience Swispy? Reach out to us through any of these channels. We're excited to hear from you!",
+    "connectNow": "Connect Now",
+    "familyDesc": "We can't wait to share our sweet creations with you. Follow our journey and be part of the Swispy family!"
+  },
+  "share": {
+    "title": "Share Your Swispy Moment!",
+    "description": "Got your Swispy box? Snap your moment, your favorite bite, or that sweet unboxing.",
+    "hashtag": "Use our hashtag:",
+    "feature": "We'll feature your photos - and maybe surprise you with a sweet gift! 💝",
+    "shareLove": "Share the Love",
+    "snapMoment": "Snap Your Moment",
+    "shareHashtag": "Share with Hashtag",
+    "winPrizes": "Win Sweet Prizes"
+  },
+  "footer": {
+    "description": "Creating mini sweets for big moments. Every detail crafted with love, every bite designed to bring joy to your special occasions.",
+    "quickLinks": "Quick Links",
+    "comingSoon": "Coming Soon",
+    "multipleLocations": "Multiple Locations",
+    "viaWhatsapp": "Via WhatsApp",
+    "dmInstagram": "DM @swispy.desserts",
+    "copyright": "All rights reserved. Made with 💕 for sweet moments.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}

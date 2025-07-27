@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürünler",
+    "ourStory": "Hikayemiz", 
+    "contact": "İletişim"
+  },
+  "home": {
+    "mainTitle": "Swispy -- Her Anınız İçin Mini Tatlılar",
+    "tagline": "Özel anlarınız için mini tatlılar. Zarif kutular, yenilikçi lezzetler, yakında elinizde!",
+    "introText": "Küçük detayların en büyük farkı yarattığına inanıyoruz. Bu yüzden Swispy'yi başlattık - yaratıcı lezzetler ve güzel ambalajlarla mini tatlılar, hediye etmek veya kendinizi şımartmak için mükemmel. Yakında - doğrudan web sitemizden veya WhatsApp üzerinden sipariş verin. Bizi takip edin!",
+    "orderWhatsapp": "WhatsApp ile Sipariş Ver",
+    "comingSoon": "Yakında",
+    "revolution": "Mini Tatlı Devrimi",
+    "learnMore": "Daha Fazla Bilgi",
+    "uniqueBoxes": "Benzersiz Kutular",
+    "sweetMoments": "Tatlı Anlar",
+    "madeWithLove": "Sevgiyle Yapıldı",
+    "miniDessertsDesc": "Özel anlarınız için tasarlanmış zarif mini tatlılar",
+    "UniqueBoxes": "Eşsiz Koleksiyonlar",
+    "SweetMoments": "SweetMoments",
+    "withlove": "Sevgiyle yapıldı",
+    "ComingSoon" : "Yakında",
+    "description" :"Özel anlarınız için özenle hazırlanmış şık mini tatlılar"
+  },
+  "products": {
+    "title": "Ürünler",
+    "collection": "Tatlı Koleksiyonumuz",
+    "collectionDesc": "Her anı daha tatlı hale getirmek için özenle hazırlanmış üç koleksiyon. Her kutu kendi hikayesini anlatır.",
+    "beFirst": "Swispy'yi İlk Deneyenlerden Olun",
+    "waitlistDesc": "Özel bekleme listemize katılın ve tatlı kreasyonlarımız sipariş için hazır olduğunda haberdar olun. Erken katılanlar özel lansman indirimleri alır!",
+    "preOrder": "WhatsApp ile Ön Sipariş",
+    "followInstagram": "Instagram'da Takip Et",
+    "flirtBox": {
+      "title": "Flirt Kutu",
+      "description": "Yumuşak lezzetlerde 4 mini cheesecake - romantik ve tatlı ambalaj."
+    },
+    "secretBox": {
+      "title": "Secret Kutu", 
+      "description": "6 zengin mini brownie - kendinizi şımartmak veya sevdiğinizle bir sır paylaşmak için."
+    },
+    "signatureBox": {
+      "title": "Signature Kutu",
+      "description": "Karışık mini lezzetler - en güzel anlarınız için lüks bir kutu."
+    }
+  },
+  "story": {
+    "title": "Hikayemiz",
+    "text": "Swispy, piyasada zarif, mini boyutlu tatlılarda bir boşluk gördüğümüzde başladı. Her türlü duruma uygun benzersiz bir şey yaratmak istedik - bir hediye, bir toplantı veya bir neşe anı. Şu anda her detayı test ediyor ve mükemmelleştiriyoruz, çünkü her an - ve her tatlı - bizim için önemli.",
+    "sweetJourney": "Tatlı Yolculuğumuz",
+    "journeySteps": "4 Adımda Yolculuğumuz",
+    "theIdea": "Fikir",
+    "theVision": "Vizyon",
+    "theProcess": "Süreç",
+    "thePromise": "Söz",
+    "ideaDesc": "Piyasada zarif, mini boyutlu tatlılarda bir boşluk gördük",
+    "visionDesc": "Her duruma uygun benzersiz bir şey yaratmak - hediyeler, toplantılar, neşe",
+    "processDesc": "Şu anda her detayı özenle test ediyor ve mükemmelleştiriyoruz",
+    "promiseDesc": "Her an ve her tatlı bizim için önemli",
+    "qualityFirst": "#KaliteÖncelikli",
+    "madeWithLove": "#SevgiyeYapıldı",
+    "everyDetail": "#HerDetayÖnemli",
+    "joinStory": "Tatlı Hikayemize Katılın",
+    "journeyDesc": "Her müşteri yolculuğumuzun bir parçası olur. Perde arkası içerikler, tarif geliştirme sürecimizi görmek ve kreasyonlarımızı ilk deneyen olmak için bizi takip edin.",
+    "followJourney": "Yolculuğumuzu Takip Et"
+  },
+  "contact": {
+    "title": "İletişim",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "website": "Resmi Web Sitesi", 
+    "orderDirect": "Doğrudan sipariş bağlantısı",
+    "thankYou": "Swispy'yi seçtiğiniz için teşekkürler - tatlılığın her duruma uygun olduğu yer 💕",
+    "letsConnect": "Hadi Bağlanalım",
+    "connectDesc": "Swispy'yi deneymeye hazır mısınız? Bu kanallardan herhangi biri üzerinden bize ulaşın. Sizden haber almak için sabırsızlanıyoruz!",
+    "connectNow": "Şimdi Bağlan",
+    "familyDesc": "Tatlı kreasyonlarımızı sizinle paylaşmak için sabırsızlanıyoruz. Yolculuğumuzu takip edin ve Swispy ailesinin bir parçası olun!"
+  },
+  "share": {
+    "title": "Swispy Anınızı Paylaşın!",
+    "description": "Swispy kutunuzu aldınız mı? Anınızı, en sevdiğiniz lokmanızı veya o tatlı kutu açma anınızı fotoğraflayın.",
+    "hashtag": "Hashtagimizi kullanın:",
+    "feature": "Fotoğraflarınızı öne çıkaracağız - ve belki sizi tatlı bir hediyeyle şaşırtırız! 💝",
+    "shareLove": "Sevgiyi Paylaşın",
+    "snapMoment": "Anınızı Yakalayın",
+    "shareHashtag": "Hashtag ile Paylaşın",
+    "winPrizes": "Tatlı Ödüller Kazanın"
+  },
+  "footer": {
+    "description": "Büyük anlar için mini tatlılar yaratıyoruz. Her detay sevgiyle hazırlanır, her lokma özel anlarınıza neşe getirmek için tasarlanır.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "comingSoon": "Yakında",
+    "multipleLocations": "Çoklu Lokasyonlar",
+    "viaWhatsapp": "WhatsApp Üzerinden",
+    "dmInstagram": "DM @swispy.desserts",
+    "copyright": "Tüm hakları saklıdır. Tatlı anlar için 💕 ile yapıldı.",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfService": "Hizmet Şartları"
+  }
+}

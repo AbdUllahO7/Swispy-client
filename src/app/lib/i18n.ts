@@ -2,6 +2,10 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+import enTranslations from '../messages/en.json';
+import arTranslations from '../messages/ar.json';
+import trTranslations from '../messages/tr.json';
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -11,20 +15,17 @@ i18n
     debug: false,
     resources: {
       en: {
-        translation: {
-          hello: 'Hello'
-        }
+        translation: enTranslations
       },
       ar: {
-        translation: {
-          hello: 'مرحبا'
-        }
+        translation: arTranslations
       },
       tr: {
-        translation: {
-          hello: 'Merhaba'
-        }
+        translation: trTranslations
       }
+    },
+    interpolation: {
+      escapeValue: false
     }
   });
 
