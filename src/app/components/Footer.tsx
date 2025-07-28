@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -40,12 +41,25 @@ const Footer: React.FC = () => {
                 💬
               </a>
               <a 
-                href="https://instagram.com/swispy.desserts" 
+                href="https://www.instagram.com/swispy.official?igsh=ZTNnYzhudm1oM2lp" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-pink-500 rounded-xl flex items-center justify-center text-2xl hover:bg-pink-600 transition-colors duration-300 hover:scale-110 transform"
               >
                 📸
+              </a>
+               <a 
+                href="https://www.tiktok.com/@swispy.official?_t=ZS-8yOk0uDg95u&_r=1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center text-2xl hover:bg-pink-600 transition-colors duration-300 hover:scale-110 transform"
+              >
+                <Image
+                src="https://logos-world.net/wp-content/uploads/2020/04/TikTok-Logo-2016-present.png"
+                alt='logotiktok'
+                width="100"
+                height="100"
+                />
               </a>
               <div className="w-12 h-12 bg-gray-600 rounded-xl flex items-center justify-center text-2xl cursor-not-allowed opacity-50">
                 🌐
@@ -76,10 +90,7 @@ const Footer: React.FC = () => {
                 <span className="text-xl">📞</span>
                 <span>{t('footer.viaWhatsapp')}</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <span className="text-xl">✉️</span>
-                <span>{t('footer.dmInstagram')}</span>
-              </div>
+        
             </div>
           </div>
         </div>
