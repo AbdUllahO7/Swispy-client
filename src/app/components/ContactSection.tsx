@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
 
 const ContactSection: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   const contactCards = [
     {
-      icon: '💬',
+      icon: 'https://www.freeiconspng.com/thumbs/logo-whatsapp-png/logo-whatsapp-png-image-2.png',
       title: t('contact.whatsapp'),
       description: t('contact.orderDirect'),
       link: 'https://wa.me/your-number',
@@ -15,21 +16,21 @@ const ContactSection: React.FC = () => {
       hoverColor: 'from-green-500 to-emerald-600'
     },
     {
-      icon: '📸',
+      icon: 'https://freepngimg.com/save/webp/118541-logo-instagram-png-download-free',
       title: t('contact.instagram'),
-      description: '@swispy.desserts',
-      link: 'https://instagram.com/swispy.desserts',
+      description: '@swispy.offical',
+      link: 'https://www.instagram.com/swispy.official?igsh=ZTNnYzhudm1oM2lp',
       color: 'from-pink-400 to-purple-500',
       hoverColor: 'from-pink-500 to-purple-600'
     },
     {
-      icon: '🌐',
-      title: t('contact.website'),
-      description: t('home.comingSoon'),
-      link: '#',
-      color: 'from-blue-400 to-indigo-500',
-      hoverColor: 'from-blue-500 to-indigo-600'
-    }
+      icon: 'https://logos-world.net/wp-content/uploads/2020/04/TikTok-Logo-2016-present.png',
+      title: t('contact.tiktok'),
+      description: '@swispy.offical',
+      link: 'https://www.tiktok.com/@swispy.official?_t=ZS-8yOk0uDg95u&_r=1',
+      color: 'from-gray-800 to-gray-900',
+      hoverColor: 'from-gray-900 to-black'
+    },
   ];
 
   return (
@@ -136,8 +137,17 @@ const ContactSection: React.FC = () => {
                 {/* Main Card */}
                 <div className="relative bg-white/95 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50 h-full min-h-[280px] flex flex-col">
                   <div className="text-center flex-1">
-                    <div className={`text-7xl mb-6 transform transition-all duration-500 ${hoveredCard === index ? 'scale-110 animate-bounce' : 'group-hover:scale-105'}`}>
-                      {card.icon}
+                    {/* Image Icon */}
+                    <div className={`mb-6 flex justify-center transform transition-all duration-500 ${hoveredCard === index ? 'scale-110 animate-bounce' : 'group-hover:scale-105'}`}>
+                      <div className="relative w-20 h-20">
+                        <img
+                          src={card.icon}
+                          alt={card.title}
+                        
+                          className="object-contain"
+                          sizes="80px"
+                        />
+                      </div>
                     </div>
                     <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-pink-600 transition-colors duration-300">
                       {card.title}

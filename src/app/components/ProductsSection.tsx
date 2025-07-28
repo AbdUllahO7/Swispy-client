@@ -83,7 +83,8 @@ const ProductsSection: React.FC = () => {
       description: t('products.signatureBox.description'),
       icon: '✨',
       color: 'from-amber-300 to-orange-400'
-    }
+    },
+
   ];
 
   return (
