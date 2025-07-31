@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Image from 'next/image';
 
 const ContactSection: React.FC = () => {
   const { t } = useTranslation();

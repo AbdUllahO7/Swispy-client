@@ -4,10 +4,10 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
-import ProductsSection from '../components/ProductsSection';
 import StorySection from '../components/StorySection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import ProductsSection from '../components/ProductsSection';
 
 const SwispyWebsite = () => {
   const { i18n } = useTranslation();
