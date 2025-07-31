@@ -1,6 +1,7 @@
-
 const nextConfig = {
   images: {
+    domains: ['localhost'],
+    unoptimized: true, // Add this line
     remotePatterns: [
       {
         protocol: 'https',

@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 
 interface ProductCardProps {
   title: string;
   description: string;
-  icon: string;
+  icon: string; // Now expects image URL/path
+  iconAlt: string; // Alt text for accessibility
   color: string;
   isActive: boolean;
   onClick: () => void;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon, color, isActive, onClick }) => {
-  const { t } = useTranslation();
-  
+const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon, iconAlt, color, isActive, onClick }) => {
   return (
     <div 
       className={`group relative cursor-pointer transition-all duration-500 transform ${isActive ? 'scale-105 z-10' : 'hover:scale-102'}`}
@@ -25,8 +23,20 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon, col
       <div className="relative bg-white/95 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50 h-full min-h-[400px] flex flex-col">
         {/* Icon */}
         <div className="text-center mb-6">
-          <div className={`text-8xl mb-4 transform transition-all duration-500 ${isActive ? 'scale-110 animate-bounce' : 'group-hover:scale-105'}`}>
-            {icon}
+          <div className={`mb-4 transform transition-all duration-500 ${isActive ? 'scale-110 animate-bounce' : 'group-hover:scale-105'} flex justify-center`}>
+            <img 
+              src={icon}
+              alt={iconAlt}
+              className="w-24 h-24 md:w-32 md:h-32 object-contain"
+              onError={(e) => {
+                console.log('Image failed to load:', icon);
+                // Show a placeholder or fallback
+                e.currentTarget.style.display = 'none';
+              }}
+              onLoad={() => {
+                console.log('Image loaded successfully:', icon);
+              }}
+            />
           </div>
           <div className={`w-16 h-1 mx-auto rounded-full bg-gradient-to-r ${color.replace('from-', 'from-').replace('to-', 'to-')} transition-all duration-500 ${isActive ? 'w-24' : ''}`}></div>
         </div>
@@ -49,7 +59,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon, col
               : 'bg-gradient-to-r from-pink-100 to-purple-100 text-pink-600 group-hover:from-pink-200 group-hover:to-purple-200'
           }`}>
             <span className="mr-2">✨</span>
-            {t('home.comingSoon')}
+            Coming Soon
             <span className="ml-2">✨</span>
           </div>
         </div>
@@ -62,30 +72,27 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon, col
 };
 
 const ProductsSection: React.FC = () => {
-  const { t } = useTranslation();
   const [activeProduct, setActiveProduct] = useState<number | null>(null);
 
   const products = [
     {
-      title: t('products.flirtBox.title'),
-      description: t('products.flirtBox.description'),
-      icon: '💕',
+      title: 'Flirt Box',
+      description: '4 mini cheesecakes in soft flavors - romantic & sweet packaging.',
+      icon: 'http://localhost:3000/assets/chs.png', // Use full absolute URL
+      iconAlt: 'Flirt Box Icon',
       color: 'from-pink-300 to-rose-400'
     },
     {
-      title: t('products.secretBox.title'),
-      description: t('products.secretBox.description'),
-      icon: '🤫',
-      color: 'from-purple-300 to-indigo-400'
+      title: 'Sweet Box', 
+      description: '4 mini cheesecakes in soft flavors - romantic & sweet packaging.',
+      icon: 'http://localhost:3000/assets/header.png', // Use full absolute URL
+      iconAlt: 'Sweet Box Icon',
+      color: 'from-purple-300 to-pink-400'
     },
-    {
-      title: t('products.signatureBox.title'),
-      description: t('products.signatureBox.description'),
-      icon: '✨',
-      color: 'from-amber-300 to-orange-400'
-    },
-
   ];
+
+  // Debug: Log the paths being used
+  console.log('Image paths:', products.map(p => p.icon));
 
   return (
     <section id="products" className="py-24 px-6 relative overflow-hidden" style={{ backgroundColor: '#f7cde2' }}>
@@ -101,17 +108,17 @@ const ProductsSection: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-block px-6 py-3 bg-white/80 backdrop-blur-md rounded-full text-pink-600 font-semibold text-sm mb-6 border border-white/50">
-            🧁 {t('products.collection')}
+            🧁 Our Collection
           </div>
           
           <h2 className="text-5xl md:text-6xl xl:text-7xl font-black mb-6">
             <span className="block bg-gradient-to-r from-purple-600 to-pink-700 bg-clip-text text-transparent">
-              {t('products.title')}
+              Sweet Products
             </span>
           </h2>
           
           <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            {t('products.collectionDesc')}
+            Discover our delicious collection of handcrafted desserts
           </p>
         </div>
 
@@ -123,6 +130,7 @@ const ProductsSection: React.FC = () => {
               title={product.title}
               description={product.description}
               icon={product.icon}
+              iconAlt={product.iconAlt}
               color={product.color}
               isActive={activeProduct === index}
               onClick={() => setActiveProduct(activeProduct === index ? null : index)}
@@ -134,10 +142,10 @@ const ProductsSection: React.FC = () => {
         <div className="text-center mt-20">
           <div className="bg-white/90 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-white/50 max-w-4xl mx-auto">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              {t('products.beFirst')}
+              Be the First to Try!
             </h3>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              {t('products.waitlistDesc')}
+              Join our waitlist and be notified when our products are available
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -147,7 +155,7 @@ const ProductsSection: React.FC = () => {
               >
                 <div className="flex items-center justify-center space-x-3">
                   <span className="text-2xl group-hover:animate-bounce">💬</span>
-                  <span>{t('products.preOrder')}</span>
+                  <span>Pre-Order Now</span>
                 </div>
               </button>
               
@@ -157,7 +165,7 @@ const ProductsSection: React.FC = () => {
               >
                 <div className="flex items-center justify-center space-x-3">
                   <span className="text-2xl">📸</span>
-                  <span>{t('products.followInstagram')}</span>
+                  <span>Follow Instagram</span>
                 </div>
               </button>
             </div>
