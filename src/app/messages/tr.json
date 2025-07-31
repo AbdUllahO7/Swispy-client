@@ -32,16 +32,12 @@
     "preOrder": "WhatsApp ile Ön Sipariş",
     "followInstagram": "Instagram'da Takip Et",
     "flirtBox": {
-      "title": "Flirt Kutu",
+      "title": "yeni yeni",
       "description": "Yumuşak lezzetlerde 4 mini cheesecake - romantik ve tatlı ambalaj."
     },
-    "secretBox": {
-      "title": "Secret Kutu", 
-      "description": "6 zengin mini brownie - kendinizi şımartmak veya sevdiğinizle bir sır paylaşmak için."
-    },
-    "signatureBox": {
-      "title": "Signature Kutu",
-      "description": "Karışık mini lezzetler - en güzel anlarınız için lüks bir kutu."
+     "secrit": {
+      "title": "yeni yeni 1",
+      "description": "Yumuşak lezzetlerde 4 mini cheesecake - romantik ve tatlı ambalaj."
     }
   },
   "story": {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface ProductCardProps {
   title: string;
@@ -73,26 +74,27 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon, ico
 
 const ProductsSection: React.FC = () => {
   const [activeProduct, setActiveProduct] = useState<number | null>(null);
+  const { t } = useTranslation();
 
   const products = [
     {
-      title: 'Flirt Box',
-      description: '4 mini cheesecakes in soft flavors - romantic & sweet packaging.',
-      icon: 'http://localhost:3000/assets/chs.png', // Use full absolute URL
+      title: t('products.flirtBox.title'),
+      description: t('products.flirtBox.description'),
+      icon: '/assets/chs.png', // Use full absolute URL
       iconAlt: 'Flirt Box Icon',
       color: 'from-pink-300 to-rose-400'
     },
+      
     {
-      title: 'Sweet Box', 
-      description: '4 mini cheesecakes in soft flavors - romantic & sweet packaging.',
-      icon: 'http://localhost:3000/assets/header.png', // Use full absolute URL
-      iconAlt: 'Sweet Box Icon',
-      color: 'from-purple-300 to-pink-400'
+      title: t('products.secrit.title'),
+      description: t('products.flirtBox.description'),
+      icon: '/assets/header.png', // Use full absolute URL
+      iconAlt: 'Flirt Box Icon',
+      color: 'from-pink-300 to-rose-400'
     },
   ];
 
-  // Debug: Log the paths being used
-  console.log('Image paths:', products.map(p => p.icon));
+
 
   return (
     <section id="products" className="py-24 px-6 relative overflow-hidden" style={{ backgroundColor: '#f7cde2' }}>
