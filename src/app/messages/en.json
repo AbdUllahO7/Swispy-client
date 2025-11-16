@@ -32,12 +32,16 @@
     "preOrder": "Pre-Order via WhatsApp",
     "followInstagram": "Follow on Instagram",
     "flirtBox": {
-      "title": "new new ",
-      "description": "4 mini cheesetarts in soft flavors - romantic & sweet packaging."
+      "title": "Flirt Box",
+      "description": "6 mini cheesetarts in soft flavors wrapped with a sweet love note.Perfect for a little flirt or a sweet surprise."
     },
-      "secrit": {
-      "title": "new new 1",
-      "description": "4 mini cheesetarts in soft flavors - romantic & sweet packaging."
+      "SecretBox": {
+      "title": "Secret Box",
+      "description": "12 rich mini brownies – a secret between you and chocolate.Perfect for self-indulgence or a mysterious gift."
+    },
+      "SignatureBox": {
+      "title": "Signature Box",
+      "description": "A luxurious mix of all Swispy flavors – crafted for your finest occasions.Our best, in one perfect box."
     }
   },
   "story": {

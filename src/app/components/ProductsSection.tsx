@@ -13,22 +13,22 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon, iconAlt, color, isActive, onClick }) => {
   return (
-    <div 
+    <div
       className={`group relative cursor-pointer transition-all duration-500 transform ${isActive ? 'scale-105 z-10' : 'hover:scale-102'}`}
       onClick={onClick}
     >
       {/* Background Card */}
       <div className={`absolute inset-0 bg-gradient-to-br ${color} rounded-3xl transform ${isActive ? 'rotate-0' : 'group-hover:rotate-1'} transition-all duration-500`}></div>
-      
+
       {/* Main Card */}
       <div className="relative bg-white/95 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50 h-full min-h-[400px] flex flex-col">
         {/* Icon */}
         <div className="text-center mb-6">
           <div className={`mb-4 transform transition-all duration-500 ${isActive ? 'scale-110 animate-bounce' : 'group-hover:scale-105'} flex justify-center`}>
-            <img 
+            <img
               src={icon}
               alt={iconAlt}
-              className="w-24 h-24 md:w-32 md:h-32 object-contain"
+              className="w-224 h-24  object-contain"
               onError={(e) => {
                 console.log('Image failed to load:', icon);
                 // Show a placeholder or fallback
@@ -54,11 +54,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon, ico
 
         {/* Coming Soon Badge */}
         <div className="text-center">
-          <div className={`inline-flex items-center px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
-            isActive 
-              ? 'bg-gradient-to-r from-pink-500 to-purple-500 text-white shadow-lg' 
-              : 'bg-gradient-to-r from-pink-100 to-purple-100 text-pink-600 group-hover:from-pink-200 group-hover:to-purple-200'
-          }`}>
+          <div className={`inline-flex items-center px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${isActive
+            ? 'bg-gradient-to-r from-pink-500 to-purple-500 text-white shadow-lg'
+            : 'bg-gradient-to-r from-pink-100 to-purple-100 text-pink-600 group-hover:from-pink-200 group-hover:to-purple-200'
+            }`}>
             <span className="mr-2">✨</span>
             Coming Soon
             <span className="ml-2">✨</span>
@@ -80,15 +79,23 @@ const ProductsSection: React.FC = () => {
     {
       title: t('products.flirtBox.title'),
       description: t('products.flirtBox.description'),
-      icon: '/assets/chs.png', // Use full absolute URL
+      icon: '/assets/hah.jpeg', // Use full absolute URL
       iconAlt: 'Flirt Box Icon',
       color: 'from-pink-300 to-rose-400'
     },
-      
     {
-      title: t('products.secrit.title'),
-      description: t('products.flirtBox.description'),
-      icon: '/assets/header.png', // Use full absolute URL
+      title: t('products.SecretBox.title'),
+      description: t('products.SecretBox.description'),
+      icon: '/assets/love.png', // Use full absolute URL
+      iconAlt: 'Flirt Box Icon',
+      color: 'from-pink-300 to-rose-400'
+    },
+
+
+    {
+      title: t('products.SignatureBox.title'),
+      description: t('products.SignatureBox.description'),
+      icon: '/assets/ahaaa.png', // Use full absolute URL
       iconAlt: 'Flirt Box Icon',
       color: 'from-pink-300 to-rose-400'
     },
@@ -112,13 +119,13 @@ const ProductsSection: React.FC = () => {
           <div className="inline-block px-6 py-3 bg-white/80 backdrop-blur-md rounded-full text-pink-600 font-semibold text-sm mb-6 border border-white/50">
             🧁 Our Collection
           </div>
-          
+
           <h2 className="text-5xl md:text-6xl xl:text-7xl font-black mb-6">
             <span className="block bg-gradient-to-r from-purple-600 to-pink-700 bg-clip-text text-transparent">
               Sweet Products
             </span>
           </h2>
-          
+
           <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
             Discover our delicious collection of handcrafted desserts
           </p>
@@ -149,9 +156,9 @@ const ProductsSection: React.FC = () => {
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Join our waitlist and be notified when our products are available
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button 
+              <button
                 className="group bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
                 onClick={() => window.open('https://wa.me/your-number', '_blank')}
               >
@@ -160,8 +167,8 @@ const ProductsSection: React.FC = () => {
                   <span>Pre-Order Now</span>
                 </div>
               </button>
-              
-              <button 
+
+              <button
                 className="bg-white text-gray-700 px-8 py-4 rounded-2xl text-lg font-semibold border-2 border-pink-200 hover:border-pink-300 transition-all duration-300 hover:bg-pink-50"
                 onClick={() => window.open('https://instagram.com/swispy.desserts', '_blank')}
               >

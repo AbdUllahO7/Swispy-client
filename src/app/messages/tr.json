@@ -24,7 +24,7 @@
     "ComingSoon" : "Yakında",
     "description" :"Özel anlarınız için özenle hazırlanmış şık mini tatlılar"
   },
-  "products": {
+   "products": {
     "title": "Ürünler",
     "collection": "Tatlı Koleksiyonumuz",
     "collectionDesc": "Her anı daha tatlı hale getirmek için özenle hazırlanmış üç koleksiyon. Her kutu kendi hikayesini anlatır.",
@@ -33,12 +33,16 @@
     "preOrder": "WhatsApp ile Ön Sipariş",
     "followInstagram": "Instagram'da Takip Et",
     "flirtBox": {
-      "title": "yeni yeni",
-      "description": "Yumuşak lezzetlerde 4 mini cheesecake - romantik ve tatlı ambalaj."
+      "title": "flirt Box",
+      "description": "Yumuşak aromalı 6 mini cheesecake – küçük bir aşk ile.Tatlı bir sürpriz ya da minik bir flört için ideal."
     },
-     "secrit": {
-      "title": "yeni yeni 1",
-      "description": "Yumuşak lezzetlerde 4 mini cheesecake - romantik ve tatlı ambalaj."
+     "SecretBox": {
+      "title": "Secret Box",
+      "description": "12 yoğun lezzetli mini brownie – senin ve çikolatanın arasında bir sır.Kendini şımartmak ya da gizemli bir hediye için."
+    },
+      "SignatureBox": {
+      "title": "Signature Box",
+      "description": "Swispy'nin tüm tatlarından lüks bir karışım – özel anlarınız için hazırlandıEn iyilerimiz… tek kutuda."
     }
   },
   "story": {
