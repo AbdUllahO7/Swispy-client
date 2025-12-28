@@ -28,7 +28,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon, ico
             <img
               src={icon}
               alt={iconAlt}
-              className="w-224 h-24  object-contain"
+              className="w-224 h-60  object-contain"
               onError={(e) => {
                 console.log('Image failed to load:', icon);
                 // Show a placeholder or fallback
@@ -79,15 +79,15 @@ const ProductsSection: React.FC = () => {
     {
       title: t('products.flirtBox.title'),
       description: t('products.flirtBox.description'),
-      icon: '/assets/hah.jpeg', // Use full absolute URL
+      icon: '/assets/flirt.jpeg', // Use full absolute URL
       iconAlt: 'Flirt Box Icon',
       color: 'from-pink-300 to-rose-400'
     },
     {
       title: t('products.SecretBox.title'),
       description: t('products.SecretBox.description'),
-      icon: '/assets/love.png', // Use full absolute URL
-      iconAlt: 'Flirt Box Icon',
+      icon: '/assets/secret.jpeg', // Use full absolute URL
+      iconAlt: 'Secret Box Icon',
       color: 'from-pink-300 to-rose-400'
     },
 
@@ -95,8 +95,8 @@ const ProductsSection: React.FC = () => {
     {
       title: t('products.SignatureBox.title'),
       description: t('products.SignatureBox.description'),
-      icon: '/assets/ahaaa.png', // Use full absolute URL
-      iconAlt: 'Flirt Box Icon',
+      icon: '/assets/signature.jpeg', // Use full absolute URL
+      iconAlt: 'Signature Box Icon',
       color: 'from-pink-300 to-rose-400'
     },
   ];

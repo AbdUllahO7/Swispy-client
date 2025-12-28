@@ -9,6 +9,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ currentLang, changeLanguage }) => {
   const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-xl z-50 border-b border-pink-100/50 shadow-sm">
@@ -45,19 +46,69 @@ const Header: React.FC<HeaderProps> = ({ currentLang, changeLanguage }) => {
           </nav>
 
           {/* Language Selector & Mobile Menu */}
-          <div className="flex items-center space-x-4">
-            <div className="relative">
-              <select 
-                value={currentLang} 
+          <div className="flex items-center space-x-2 md:space-x-4">
+            {/* Mobile: Custom Dropdown */}
+            <div className="relative shrink-0 md:hidden">
+              <button
+                onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+                className="flex items-center gap-1 text-gray-700 bg-white/80 backdrop-blur-md border border-pink-200 rounded-lg px-2 py-2 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-pink-300 transition-all duration-300 hover:bg-white/90"
+              >
+                <span>{currentLang === 'en' ? '🇺🇸' : currentLang === 'ar' ? '🇸🇦' : '🇹🇷'}</span>
+                <span>{currentLang.toUpperCase()}</span>
+                <span className="text-pink-400 text-[10px]">▼</span>
+              </button>
+              {isLangMenuOpen && (
+                <>
+                  <div
+                    className="fixed inset-0 z-40"
+                    onClick={() => setIsLangMenuOpen(false)}
+                  />
+                  <div className="absolute right-0 top-full mt-2 bg-white border border-pink-200 rounded-lg shadow-lg overflow-hidden z-50 min-w-[100px]">
+                    <button
+                      onClick={() => {
+                        changeLanguage('en');
+                        setIsLangMenuOpen(false);
+                      }}
+                      className={`w-full px-4 py-2.5 text-left text-xs font-medium transition-colors ${currentLang === 'en' ? 'bg-pink-50 text-pink-600' : 'text-gray-700 hover:bg-pink-50'}`}
+                    >
+                      🇺🇸 EN
+                    </button>
+                    <button
+                      onClick={() => {
+                        changeLanguage('ar');
+                        setIsLangMenuOpen(false);
+                      }}
+                      className={`w-full px-4 py-2.5 text-left text-xs font-medium transition-colors ${currentLang === 'ar' ? 'bg-pink-50 text-pink-600' : 'text-gray-700 hover:bg-pink-50'}`}
+                    >
+                      🇸🇦 AR
+                    </button>
+                    <button
+                      onClick={() => {
+                        changeLanguage('tr');
+                        setIsLangMenuOpen(false);
+                      }}
+                      className={`w-full px-4 py-2.5 text-left text-xs font-medium transition-colors ${currentLang === 'tr' ? 'bg-pink-50 text-pink-600' : 'text-gray-700 hover:bg-pink-50'}`}
+                    >
+                      🇹🇷 TR
+                    </button>
+                  </div>
+                </>
+              )}
+            </div>
+
+            {/* Desktop: Native Select */}
+            <div className="relative shrink-0 hidden md:block">
+              <select
+                value={currentLang}
                 onChange={(e) => changeLanguage(e.target.value)}
-                className="appearance-none text-black bg-white/80 backdrop-blur-md border border-pink-200 rounded-xl px-4 py-2 pr-8 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent transition-all duration-300 hover:bg-white/90"
+                className="appearance-none text-gray-700 bg-white/80 backdrop-blur-md border border-pink-200 rounded-xl px-4 py-2 pr-8 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent transition-all duration-300 hover:bg-white/90 cursor-pointer"
               >
                 <option value="en">🇺🇸 EN</option>
                 <option value="ar">🇸🇦 AR</option>
                 <option value="tr">🇹🇷 TR</option>
               </select>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
-                <span className="text-pink-400">▼</span>
+                <span className="text-pink-400 text-xs">▼</span>
               </div>
             </div>
 
