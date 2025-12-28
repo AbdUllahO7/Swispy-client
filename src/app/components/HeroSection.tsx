@@ -30,15 +30,15 @@ const HeroSection: React.FC = () => {
       className="relative bg-gradient-to-br from-pink-50 via-purple-50 to-pink-100"
     >
       {/* Desktop View */}
-      <div className="hidden md:block relative min-h-screen">
+      <div className="hidden md:block relative min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-pink-100">
         <img
           src={getBackgroundImage()}
           alt="Hero background"
           className="absolute inset-0 w-full h-full object-contain"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-pink-100"></div>
 
-        <div className="absolute bottom-0 left-0 right-0 z-10 pb-16 px-6">
+        <div className="absolute bottom-10 left-0 right-0 z-10  px-6" >
           <div className="w-full max-w-md mx-auto">
             <button
               onClick={handleWhatsAppOrder}
@@ -55,11 +55,7 @@ const HeroSection: React.FC = () => {
                 </div>
               </div>
             </button>
-            <div className="mt-4 text-center">
-              <span className="inline-block px-6 py-2 bg-white/90 backdrop-blur-md rounded-full text-pink-600 font-semibold text-sm shadow-lg">
-                ✨ {t('home.comingSoon')}
-              </span>
-            </div>
+       
           </div>
         </div>
       </div>
